@@ -1,46 +1,37 @@
-/* Apply background color to the body */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Style the results content */
 .results-content {
+  height: 90vh;
+  width: 100vw;
   background-color: #303030;
   padding: 20px;
 }
 
-/* Style the heading */
 .heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0;
-  background-color: transparent; /* Remove the background color */
+  background-color: transparent;
   color: white;
   font-size: 30px;
-  margin-bottom: 20px; /* Add margin to separate from the line image */
 }
 
-/* Style the line image */
-.line-image {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.line-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Style for the family image */
 .family-image {
   display: flex;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 750px;
   height: auto;
-  margin-left: 110px;
-  top: 0;
-  right: 0;
+  margin-left: 40%;
+  margin-top: 8%;
+}
+
+.both {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.line-image {
+  margin-top: 20px;
 }

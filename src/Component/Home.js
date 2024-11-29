@@ -8,13 +8,13 @@ import { useNavigate } from "react-router-dom";
 import "./Home.css";
 
 function Home() {
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate();
 
   const [age, setAge] = useState("");
   const [procedures, setProcedures] = useState("");
   const [procedures2, setProcedures2] = useState("");
-  const [check, setCheck] = useState([]); // Updated to hold an array for multiple selections
-  const [cycles, setCycles] = useState(0); // State for storing the slider value
+  const [check, setCheck] = useState([]);
+  const [cycles, setCycles] = useState(0);
 
   const handleClick = (val) => {
     setAge(val);
@@ -30,18 +30,18 @@ function Home() {
 
   const handleCheckboxClick = (val) => {
     if (check.includes(val)) {
-      setCheck(check.filter((item) => item !== val)); // Remove the value if it's already selected
+      setCheck(check.filter((item) => item !== val));
     } else {
-      setCheck([...check, val]); // Add the value if it's not already selected
+      setCheck([...check, val]);
     }
   };
 
   const handleCalculate = () => {
-    navigate("/result"); // Navigate to the result page
+    navigate("/result");
   };
 
   const handleSliderChange = (event) => {
-    setCycles(event.target.value); // Update the slider value
+    setCycles(event.target.value);
   };
 
   return (
@@ -115,7 +115,6 @@ function Home() {
             onChange={handleSliderChange}
           />
           <div className="slider-value">{cycles}</div>{" "}
-          {/* Display the current slider value */}
         </div>
       </div>
 

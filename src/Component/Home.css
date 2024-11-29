@@ -1,7 +1,7 @@
 body {
   font-family: "Arial", sans-serif;
 
-  background-color: white; /* Ensuring body has white background */
+  background-color: white;
 }
 
 .range {
@@ -9,7 +9,7 @@ body {
   margin: 20px auto;
   padding: 0 15px;
   max-width: 100%;
-  background-color: white; /* Added white background */
+  background-color: white;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
   margin-bottom: 20px;
   color: #333;
   margin-top: 40px;
-  background-color: white; /* Added white background */
+  background-color: white;
 }
 
 .option1,
@@ -28,7 +28,7 @@ h1 {
   justify-content: center;
   gap: 15px;
   margin-bottom: 20px;
-  background-color: white; /* Added white background */
+  background-color: white;
 }
 
 .option1 div,
@@ -38,7 +38,7 @@ h1 {
   gap: 10px;
   font-size: 16px;
   font-weight: 500;
-  background-color: white; /* Added white background */
+  background-color: white;
   cursor: pointer;
 }
 
@@ -53,7 +53,7 @@ h1 {
   padding: 10px 15px;
   border-radius: 8px;
   text-align: center;
-  background-color: white; /* Added white background */
+  background-color: white;
 }
 
 .checkboxes {
@@ -61,7 +61,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  background-color: white; /* Added white background */
+  background-color: white;
 }
 
 .checkboxes div {
@@ -71,7 +71,7 @@ h1 {
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 5px;
-  background-color: white; /* Added white background */
+  background-color: white;
 }
 
 .btn {
@@ -96,7 +96,7 @@ h1 {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 15px;
-  background-color: white; /* Added white background */
+  background-color: white;
 }
 
 .procedures-radio {
@@ -105,7 +105,7 @@ h1 {
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
-  background-color: white; /* Added white background */
+  background-color: white;
 }
 
 .procedures-radio h2 {
@@ -135,7 +135,6 @@ h1 {
   background-color: white;
 }
 
-/* Specific styles for ICSI and PGT testing radio buttons */
 .procedures-radio.icsi,
 .procedures-radio.pgt-testing {
   flex-direction: row;
@@ -182,7 +181,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  background-color: white; /* Added white background */
+  background-color: white;
 }
 
 .heading-procedures h1 {
@@ -190,7 +189,6 @@ h1 {
   justify-content: center;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   h1 {
     font-size: 20px;
@@ -223,7 +221,6 @@ h1 {
     font-size: 0.9rem;
   }
 
-  /* Responsive styles for ICSI and PGT testing radio buttons */
   .procedures-radio.icsi,
   .procedures-radio.pgt-testing {
     flex-direction: column;
