@@ -1,0 +1,242 @@
+body {
+  font-family: "Arial", sans-serif;
+
+  background-color: white; /* Ensuring body has white background */
+}
+
+.range {
+  text-align: center;
+  margin: 20px auto;
+  padding: 0 15px;
+  max-width: 100%;
+  background-color: white; /* Added white background */
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: 40px;
+  background-color: white; /* Added white background */
+}
+
+.option1,
+.option2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  background-color: white; /* Added white background */
+}
+
+.option1 div,
+.option2 div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: white; /* Added white background */
+  cursor: pointer;
+}
+
+.option1 div:hover,
+.option2 div:hover {
+  color: #e42541;
+}
+
+.medical {
+  margin: 20px auto;
+  max-width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: white; /* Added white background */
+}
+
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  background-color: white; /* Added white background */
+}
+
+.checkboxes div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: white; /* Added white background */
+}
+
+.btn {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.btn button {
+  background-color: #f54c55;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+}
+
+.procedures {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  background-color: white; /* Added white background */
+}
+
+.procedures-radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  background-color: white; /* Added white background */
+}
+
+.procedures-radio h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+  background-color: white;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: white;
+}
+
+.radio-option img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  background-color: white;
+}
+
+.radio-option span {
+  font-size: 1rem;
+  background-color: white;
+}
+
+/* Specific styles for ICSI and PGT testing radio buttons */
+.procedures-radio.icsi,
+.procedures-radio.pgt-testing {
+  flex-direction: row;
+  align-items: center;
+}
+
+.procedures-radio.icsi > div,
+.procedures-radio.pgt-testing > div {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.number_cycles h1 {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.btn {
+  background-color: #f54c55;
+  display: flex;
+  border: none;
+}
+
+.calc {
+  background-color: #f54c55;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.calc_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  background-color: white; /* Added white background */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .option1 div,
+  .option2 div {
+    font-size: 14px;
+  }
+
+  .checkboxes div {
+    padding: 8px 12px;
+  }
+
+  .btn button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .procedures-radio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .procedures-radio > div {
+    width: 100%;
+  }
+
+  .radio-option span {
+    font-size: 0.9rem;
+  }
+
+  /* Responsive styles for ICSI and PGT testing radio buttons */
+  .procedures-radio.icsi,
+  .procedures-radio.pgt-testing {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .option1 div,
+  .option2 div {
+    font-size: 12px;
+  }
+
+  .checkboxes div {
+    padding: 6px 10px;
+  }
+}
