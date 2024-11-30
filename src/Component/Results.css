@@ -114,25 +114,19 @@ h2 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  mix-blend-mode: luminosity;
+  width: 65vw;
+  height: 100vh;
+  margin-top: 60px;
+  margin-right: auto;
 }
 
 .image-section img {
-  width: 100%;
+  width: 110%;
   height: 100%;
   object-fit: cover;
   filter: grayscale(100%);
 }
 
-/* Main CSS remains unchanged */
-
-/* ... (all the CSS before media queries remains the same) ... */
-
-/* Updated and new media queries */
 @media (max-width: 1200px) {
   .results-container {
     padding: 4vw;
