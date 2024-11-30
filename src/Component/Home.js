@@ -47,7 +47,7 @@ function Home() {
   return (
     <div className="all">
       <div className="range">
-        <h1>Which age applies to you? </h1>
+        <h1 className="range-heading">Which age applies to you? </h1>
         <div className="option1">
           <div onClick={() => handleClick("Under 30")}>
             <img
@@ -103,7 +103,7 @@ function Home() {
 
       <div className="cycles">
         <div className="number_cycles">
-          <h1>Number of IVF Cycles?</h1>
+          <h1 className="ivf-heading">Number of IVF Cycles?</h1>
         </div>
         <div className="slider">
           <input
@@ -120,7 +120,10 @@ function Home() {
 
       <div className="procedures">
         <div className="heading-procedures">
-          <h1> Have you undergone these procedures before?</h1>
+          <h1 className="procedures-heading">
+            {" "}
+            Have you undergone these procedures before?
+          </h1>
         </div>
         <div className="procedures-radio">
           <h2>ISCI Procedure:</h2>

@@ -154,7 +154,7 @@ h1 {
   background-color: white;
 }
 
-.number_cycles h1 {
+.number_cycles .ivf-heading {
   display: flex;
   justify-content: center;
   background-color: white;
@@ -184,7 +184,7 @@ h1 {
   background-color: white;
 }
 
-.heading-procedures h1 {
+.heading-procedures .procedures-heading {
   display: flex;
   justify-content: center;
 }

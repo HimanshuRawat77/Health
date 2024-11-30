@@ -1,37 +1,231 @@
-body {
+body,
+html {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  height: 100%;
 }
 
-.results-content {
-  height: 90vh;
-  width: 100vw;
+.results-container {
+  min-height: 100vh;
   background-color: #303030;
-  padding: 20px;
-}
-
-.heading {
-  background-color: transparent;
   color: white;
-  font-size: 30px;
+  padding: 5vw;
+  position: relative;
+  overflow: hidden;
 }
 
-.family-image {
+.breadcrumb {
   display: flex;
-  margin: 0 auto;
-  max-width: 750px;
-  height: auto;
-  margin-left: 40%;
-  margin-top: 8%;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 5vh;
 }
 
-.both {
-  gap: 10px;
+.breadcrumb span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.breadcrumb span:last-child {
+  color: white;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.heading-section {
   display: flex;
   align-items: center;
-  text-align: center;
+  gap: 24px;
+  margin-bottom: 10vh;
 }
 
-.line-image {
-  margin-top: 20px;
+.dot-line {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: clamp(16px, 3vw, 24px);
+  height: clamp(16px, 3vw, 24px);
+  background-color: #e9967a;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.line {
+  width: clamp(40px, 5vw, 60px);
+  height: 2px;
+  background-color: #e9967a;
+  margin-left: -12px;
+}
+
+h2 {
+  font-size: clamp(28px, 5vw, 52px);
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+  background-color: #303030;
+  color: white;
+}
+
+.chart-section {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 5vh;
+}
+
+.chart-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(36px, 8vw, 64px);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cycle-text {
+  font-size: clamp(18px, 3vw, 24px);
+  color: white;
+  text-align: center;
+  font-weight: 400;
+}
+
+.image-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: luminosity;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+/* Main CSS remains unchanged */
+
+/* ... (all the CSS before media queries remains the same) ... */
+
+/* Updated and new media queries */
+@media (max-width: 1200px) {
+  .results-container {
+    padding: 4vw;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .image-section {
+    width: 40%;
+  }
+
+  .content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .results-container {
+    padding: 3vw;
+  }
+
+  .heading-section {
+    margin-bottom: 6vh;
+  }
+
+  .breadcrumb {
+    margin-bottom: 4vh;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .image-section {
+    opacity: 0.3;
+    width: 100%;
+    height: 50%;
+    top: auto;
+    bottom: 0;
+  }
+
+  .gradient-overlay {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.7), #303030);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+
+  .chart-section {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .results-container {
+    padding: 20px;
+  }
+
+  .heading-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .dot-line {
+    margin-bottom: 12px;
+  }
+
+  .image-section {
+    height: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: clamp(24px, 5vw, 36px);
+  }
+
+  .chart-section {
+    margin-bottom: 3vh;
+  }
+
+  .image-section {
+    height: 30%;
+  }
 }
